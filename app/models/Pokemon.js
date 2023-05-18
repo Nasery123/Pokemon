@@ -1,22 +1,22 @@
 
 export class Pokemon {
-    constructor(data) {
-        this.id = data.id
-        this.name = data.name
-        this.nickName = data.nickName
-        this.img = data.img
-        this.weight = data.weight
-        this.hight = data.hight
-        this.type = data.type
-        this.url = data.url
-    }
+  constructor(data) {
+    debugger
+    this.id = data.id
+    this.name = data.name
+    this.img = data.sprites.front_default
+    this.weight = data.weight
+    this.hight = data.height
+    this.type = data.types
+    this.url = data.url
+  }
 
 
 
 
 
-    get ActivePokemonTemplate() {
-        return `
+  get ActivePokemonTemplate() {
+    return `
         <div class=" row">
         <div class="col-4">Seaking</div>
         <div>
@@ -38,7 +38,7 @@ export class Pokemon {
 
       </div>
         `
-    }
+  }
 
 
 
